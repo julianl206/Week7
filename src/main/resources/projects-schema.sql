@@ -41,13 +41,6 @@ CREATE TABLE material (
 	num_required INT,
 	cost DECIMAL(7,2),
 	FOREIGN KEY (project_id) REFERENCES project(project_id)
-	
-	CREATE TABLE project (
-  project_id INT PRIMARY KEY AUTO_INCREMENT,
-  project_name VARCHAR(255) NOT NULL,
-  estimated_hours DECIMAL(10,2),
-  actual_hours DECIMAL(10,2),
-  difficulty INT,
-  notes VARCHAR(255)
-)
-;
+);
+
+
